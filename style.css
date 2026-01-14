@@ -151,6 +151,20 @@ nav a:hover {
     color: #7a4fa3;
     margin-top: 0;
 }
+.map-container {
+    max-width: 900px;  /* limits map width */
+    margin: 20px auto; /* centers map */
+    border-radius: 12px;
+    overflow: hidden;  /* rounds corners of map */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    width: 100%;   /* fills container */
+    height: 450px; /* adjust height as needed */
+    border: 0;
+}
+
 
 /* ---------- Services Pages ---------- */
 
