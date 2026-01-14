@@ -1,4 +1,4 @@
-/* ---------- HOME PAGE HERO ---------- */
+/* ---------- HOME PAGE ---------- */
 .hero {
     display: flex;
     align-items: center;
@@ -74,6 +74,13 @@ nav a:hover {
 .btn:hover {
     opacity: 0.85;
 }
+
+.logo img {
+    height: 250px;
+    width: auto;
+}
+
+
 
 /* ---------- TRUST SECTION ---------- */
 .trust {

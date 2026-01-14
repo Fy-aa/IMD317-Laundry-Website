@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs | VelvetBubbles Care</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #7a4fa3;
+        }
+
+        .container h2 {
+            color: #7a4fa3;
+            margin-top: 30px;
+            border-bottom: 2px solid #7a4fa3;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: #f0e6fa;
+            margin-bottom: 12px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        ul li:hover {
+            transform: scale(1.02);
+        }
+
+        .tip {
+            font-weight: bold;
+            color: #7a4fa3;
+        }
+
+        .description {
+            margin-top: 5px;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
@@ -19,11 +71,64 @@
 </header>
 
 <section class="content">
-    <h2>Laundry Tips</h2>
-    <p>Learn how to care for your clothes properly.</p>
+    <div class="container">
+        <h1>VelvetBubbles Laundry Guide</h1>
+        <p style="text-align:center;">
+            Welcome to VelvetBubbles! Learn our top laundry tips and discover our step-by-step service guide to keep your clothes looking their best.
+        </p>
 
-    <h2>Laundry Guide</h2>
-    <p>Step-by-step guide for washing different fabrics.</p>
+        <h2>Laundry Tips</h2>
+        <ul>
+            <li>
+                <div class="tip">Sort Before You Wash</div>
+                <div class="description">Separate whites, darks, and colors to prevent color bleeding.</div>
+            </li>
+            <li>
+                <div class="tip">Check Labels</div>
+                <div class="description">Always read garment care tags to avoid fabric damage.</div>
+            </li>
+            <li>
+                <div class="tip">Treat Stains Immediately</div>
+                <div class="description">Pre-treat stains early for best results.</div>
+            </li>
+            <li>
+                <div class="tip">Use the Right Detergent</div>
+                <div class="description">Gentle detergents work best for delicate fabrics.</div>
+            </li>
+            <li>
+                <div class="tip">Don’t Overload the Machine</div>
+                <div class="description">Clothes need space to move for proper cleaning.</div>
+            </li>
+            <li>
+                <div class="tip">Proper Drying</div>
+                <div class="description">Air dry delicate items, tumble dry sturdy fabrics.</div>
+            </li>
+        </ul>
+
+        <h2>Laundry Service Guide</h2>
+        <ul>
+            <li>
+                <div class="tip">Step 1: Drop-Off</div>
+                <div class="description">Quick check-in and special instructions noted.</div>
+            </li>
+            <li>
+                <div class="tip">Step 2: Expert Cleaning</div>
+                <div class="description">Professional machines and experienced care.</div>
+            </li>
+            <li>
+                <div class="tip">Step 3: Stain & Fabric Care</div>
+                <div class="description">Special treatments for stains and delicate items.</div>
+            </li>
+            <li>
+                <div class="tip">Step 4: Folding & Packaging</div>
+                <div class="description">Neatly folded or hung for convenience.</div>
+            </li>
+            <li>
+                <div class="tip">Step 5: Pickup / Delivery</div>
+                <div class="description">Optional delivery for busy customers.</div>
+            </li>
+        </ul>
+    </div>
 </section>
 
 <footer>
