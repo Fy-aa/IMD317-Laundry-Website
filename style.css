@@ -151,6 +151,24 @@ nav a:hover {
     color: #7a4fa3;
     margin-top: 0;
 }
+
+.team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f3fb;
+}
+
+.team h2 {
+    color: #7b4f9d;
+    margin-bottom: 30px;
+}
+
+.team-photo img {
+    width: 30%;           
+    height: auto;        
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 .map-container {
     max-width: 900px;  /* limits map width */
     margin: 20px auto; /* centers map */
