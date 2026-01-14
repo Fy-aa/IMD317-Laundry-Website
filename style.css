@@ -120,6 +120,49 @@ nav a:hover {
     color: #7a4fa3;
 }
 
+.store-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f3fb;
+}
+
+.store-gallery h2 {
+    color: #7b4f9d;
+    margin-bottom: 40px;
+}
+
+.store-row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;               
+    flex-wrap: wrap;         
+}
+
+.store-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    width: 250px;            
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.store-item:hover {
+    transform: scale(1.03);
+}
+
+.store-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.store-item p {
+    color: #7b4f9d;
+    font-weight: bold;
+    margin: 0;
+}
 
 /* Services page*/
 .services-grid {
