@@ -120,6 +120,13 @@ nav a:hover {
     color: #7a4fa3;
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center;
+}
+
 .store-gallery {
     text-align: center;
     padding: 50px 20px;
