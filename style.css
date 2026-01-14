@@ -1,0 +1,274 @@
+/* ---------- HOME PAGE HERO ---------- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    background-color: #f3eef9;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    color: #7a4fa3;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-image {
+    font-size: 120px;
+}
+
+header {
+    background-color: #b58bd3;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+nav {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #7a4fa3;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #5fa6c8;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* ---------- TRUST SECTION ---------- */
+.trust {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.how-it-works {
+    padding: 60px;
+    text-align: center;
+    background-color: #f9f7fc;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: white;
+    padding: 25px;
+    width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.step h3 {
+    margin-top: 10px;
+    color: #7a4fa3;
+}
+
+
+/* Services page*/
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    width: 260px;
+    padding: 25px;
+    background-color: #DDA0DD;
+    text-decoration: none;
+    color: #9370DB;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover,
+.service-card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    color: #7a4fa3;
+    margin-top: 0;
+}
+
+/* ---------- Services Pages ---------- */
+
+/* Page section cards */
+.service-section {
+    background-color: #ffffff;
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Section headings */
+.service-section h2,
+.service-section h3 {
+    color: #7a4fa3;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Lists styling */
+.service-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.service-section ul li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Action button */
+.service-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 26px;
+    background-color:#9370DB;
+    color: pink;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.service-button:hover {
+    background-color: #9370DB;
+}
+/* ---------- DELIVERY FORM ---------- */
+.delivery-form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.delivery-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.delivery-form input,
+.delivery-form textarea,
+.delivery-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.delivery-form input:focus,
+.delivery-form textarea:focus,
+.delivery-form select:focus {
+    outline: none;
+    border-color: #7a4fa3;
+}
+/* ---------- PRICING TABLE ---------- */
+.pricing-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-table th {
+    background-color: #7a4fa3;
+    color: white;
+    font-weight: bold;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-table tr:hover {
+    background-color: #f9f7fc;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #5fa6c8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
