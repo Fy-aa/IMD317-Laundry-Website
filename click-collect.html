@@ -24,44 +24,6 @@
         Our Click & Collect service allows you to place your laundry order
         online and collect it at a time that suits you.
     </p>
-<div class="service-section">
-    <h2>Click & Collect Form</h2>
-    <p>Please fill in the form below to place your laundry order.</p>
-
-    <form class="delivery-form">
-        <label for="cc-name">Full Name</label>
-        <input type="text" id="cc-name" name="name" required>
-
-        <label for="cc-phone">Phone Number</label>
-        <input type="tel" id="cc-phone" name="phone" required>
-
-        <label for="cc-email">Email Address</label>
-        <input type="email" id="cc-email" name="email">
-
-        <label for="cc-date">Collection Date</label>
-        <input type="date" id="cc-date" name="collection_date" required>
-
-        <label for="cc-time">Preferred Collection Time</label>
-        <select id="cc-time" name="collection_time">
-            <option>Morning (9:00 AM – 12:00 PM)</option>
-            <option>Afternoon (12:00 PM – 4:00 PM)</option>
-            <option>Evening (4:00 PM – 7:00 PM)</option>
-        </select>
-
-        <label for="cc-service">Type of Laundry</label>
-        <select id="cc-service" name="service">
-            <option>Regular Wash</option>
-            <option>Dry Cleaning</option>
-            <option>Express Service</option>
-        </select>
-
-        <label for="cc-notes">Additional Notes</label>
-        <textarea id="cc-notes" name="notes" rows="3"></textarea>
-
-        <button type="submit" class="service-button">Submit Order</button>
-    </form>
-</div>
-
 
     <h3>Benefits</h3>
     <ul>
@@ -70,7 +32,55 @@
         <li>No waiting in line</li>
         <li>Ideal for busy schedules</li>
     </ul>
+
+    <div class="service-section">
+        <h2>Click & Collect Form</h2>
+        <p>Please fill in the form below to place your laundry order.</p>
+
+        <form class="delivery-form" onsubmit="return hantaq();">
+            <label for="cc-name">Full Name</label>
+            <input type="text" id="cc-name" name="name" required>
+
+            <label for="cc-phone">Phone Number</label>
+            <input type="tel" id="cc-phone" name="phone" required>
+
+            <label for="cc-email">Email Address</label>
+            <input type="email" id="cc-email" name="email">
+
+            <label for="cc-date">Collection Date</label>
+            <input type="date" id="cc-date" name="collection_date" required>
+
+            <label for="cc-time">Preferred Collection Time</label>
+            <select id="cc-time" name="collection_time" required>
+                <option value="">-- Select Time --</option>
+                <option>Morning (9:00 AM – 12:00 PM)</option>
+                <option>Afternoon (12:00 PM – 4:00 PM)</option>
+                <option>Evening (4:00 PM – 7:00 PM)</option>
+            </select>
+
+            <label for="cc-service">Type of Laundry</label>
+            <select id="cc-service" name="service" required>
+                <option value="">-- Select Service --</option>
+                <option>Regular Wash</option>
+                <option>Dry Cleaning</option>
+                <option>Express Service</option>
+            </select>
+
+            <label for="cc-notes">Additional Notes</label>
+            <textarea id="cc-notes" name="notes" rows="3"></textarea>
+
+            <button type="submit" class="service-button">Submit Order</button>
+        </form>
+    </div>
 </section>
+
+<script>
+function hantaq() {
+    var name = document.getElementById("cc-name").value;
+    alert("Thank you " + name + "! Your pickup request has been submitted.");
+    return false; // prevents page reload
+}
+</script>
 
 <footer>
     <p>&copy; 2026 VelvetBubbles Care</p>

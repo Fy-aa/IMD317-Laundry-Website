@@ -19,16 +19,38 @@
 </header>
 
 <section class="content">
-    <h2 style=text-align:center;>Contact & Help</h2>
-    <p style=text-align:center;>Email: velvetbubblescare@gmail.com</p>
-    <p style=text-align:center;>Phone: 012-345 6789</p>
+    <h2 style="text-align:center;">Contact & Help</h2>
+    <p style="text-align:center;">Email: velvetbubblescare@gmail.com</p>
+    <p style="text-align:center;">Phone: 012-345 6789</p>
 
-    <h3 style=text-align:center;>FAQ</h3>
-    <p style=text-align:center;>Find answers to common questions.</p>
+    <h3 style="text-align:center;">FAQ</h3>
+    <p style="text-align:center;">Find answers to common questions.</p>
 
-    <h3 style=text-align:center;>Feedback</h3>
-    <p style=text-align:center;>Your feedback helps us improve our services.</p>
+    <h3 style="text-align:center;">Feedback</h3>
+    <p style="text-align:center;">Your feedback helps us improve our services.</p>
+
+    <!-- Feedback Form -->
+    <form onsubmit="return sendFeedback();" style="max-width:500px; margin: 0 auto;">
+        <label for="fb-name">Full Name</label>
+        <input type="text" id="fb-name" required>
+
+        <label for="fb-email">Email Address</label>
+        <input type="email" id="fb-email" required>
+
+        <label for="fb-message">Your Feedback</label>
+        <textarea id="fb-message" rows="4" required></textarea>
+
+        <button type="submit" class="service-button">Submit Feedback</button>
+    </form>
 </section>
+
+<script>
+function sendFeedback() {
+    var name = document.getElementById("fb-name").value;
+    alert("Thank you, " + name + "! Your feedback has been received.");
+    return false; // prevent page reload
+}
+</script>
 
 <footer>
     <p>&copy; 2026 VelvetBubbles Care</p>
